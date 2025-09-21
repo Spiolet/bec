@@ -1,0 +1,10 @@
+body{
+background-image:url('/static/pics/bgi.png');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+.white-bg{
+    background-color:white;
+}

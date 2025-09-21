@@ -1,0 +1,205 @@
+from bottle import route, run, template, static_file, request
+import os
+import markdown
+import json
+from PIL import Image
+
+NAVBAR =(
+    {'url':'/','name': 'Homepage'},
+    {'url':'/about','name': 'About'},
+    {'url':'/gallery','name':'Gallery'},
+    {'url':'/cr','name': 'Articles'},
+    {'url':'/events','name': 'Events'}
+)
+@route('/')
+def homepage():
+    return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album()[0:5], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
+
+@route('/static/<filepath:path>')
+def static_files(filepath):
+    return static_file(filepath, './static/')
+
+@route('/about')
+def about():
+    return template('about', NAVBAR=NAVBAR)
+
+@route('/favicon.ico')
+def beclogostuff ():
+    return static_file ('BEC-logo.ico', '.')
+
+EVENTS_PAST =(
+    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': 'technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies.show less'},
+)
+for item in EVENTS_PAST:
+    item['short']= item['detail']
+    item['short']=item['short'].split(".")
+    item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
+
+EVENTS_FUTURE =(
+    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2025-10-26', 'detail': 'technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies.show less'},
+)
+
+for item in EVENTS_FUTURE:
+    item['short']= item['detail']
+    item['short']=item['short'].split(".")
+    item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
+
+@route('/events')
+def events():
+    return template('events', NAVBAR=NAVBAR, EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
+
+def generate_thumbnail(image_path):
+    """
+    Generate a thumbnail for an image.
+
+    :param image_path: Path to the original image (e.g., "./static/album/xxx.jpg")
+    :param size: Desired thumbnail size (width, height)
+    :return: Path to the saved thumbnail
+    """
+    # Ensure output folder exists
+    thumb_dir = "./static/thumb"
+    os.makedirs(thumb_dir, exist_ok=True)
+
+    # Extract filename
+    filename = os.path.basename(image_path)
+    thumb_path = os.path.join(thumb_dir, filename)
+
+    # Open and generate thumbnail
+    with Image.open(image_path) as img:
+        # Correct orientation using EXIF data if available
+        try:
+            exif = img._getexif()
+            if exif is not None:
+                for tag, value in exif.items():
+                    if tag == 274:  # Orientation tag
+                        if value == 3:
+                            img = img.rotate(180, expand=True)
+                        elif value == 6:
+                            img = img.rotate(270, expand=True)
+                        elif value == 8:
+                            img = img.rotate(90, expand=True)
+        except (AttributeError, KeyError, IndexError):
+            # No EXIF data or EXIF doesn't have orientation info
+            pass
+        img.thumbnail((400, img.height*400/img.width))
+        img.save(thumb_path, "JPEG")
+
+    return thumb_path
+
+def get_album():
+    l=list(os.walk("./static/album"))[0][2]
+    l=filter(lambda x:x!='.DS_Store', l)
+    s=[[int(f.split('.')[0]),f] for f in l]
+    s=sorted(s,key=lambda x:x[0], reverse=True)
+    s=[item[1] for item in s]
+    for item in s:
+        generate_thumbnail('./static/album/'+item)
+    return s
+
+@route('/api/events_past')
+def api_events_past():
+    return json.dumps(EVENTS_PAST)
+
+@route('/api/events_future')
+def api_events_past():
+    return json.dumps(EVENTS_FUTURE)
+
+@route('/gallery')
+def gallery():
+    return template('gallery', NAVBAR=NAVBAR, album=get_album())
+
+def get_recaps():
+    l=list(os.walk("./recaps"))[0][2]
+    l=filter(lambda x:x!='.DS_Store', l)
+    s=[[f.split('.')[0],f] for f in l]
+    s=sorted(s,key=lambda x:x[0], reverse=True)
+    return s
+
+@route('/cr')
+def cr():
+    return template('course_recap', NAVBAR=NAVBAR, recaps=get_recaps())
+
+@route('/crc/<name>')
+def crc (name):
+    with open('recaps/'+name+'.md', 'r', encoding='utf-8') as f:
+        t=f.read()
+        html = markdown.markdown(t)
+        return template('course_recapv2', NAVBAR=NAVBAR, html=html)
+
+
+
+
+
+
+
+
+
+
+
+
+for item in os.walk("./static/album"):
+    print(item)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+run(host='0.0.0.0', port=80)

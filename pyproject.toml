@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "boston eaglets project"
+version = "0.1.0"
+description = "Boston Eaglets Project for the Boston Eaglets"
+authors = ["Spencer"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bottle = "^0.13.2"
+markdown = "^3.7"
+pillow = "^11.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
