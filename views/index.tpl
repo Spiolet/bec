@@ -144,7 +144,7 @@
               <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Brian Li, Class of 2027</h2>
-                <h4 class="mb-0">President</h4>
+                <h4 class="mb-0">President, Founder</h4>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
               <div class="col-3"><img src="/static/pics/SWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Spencer Wu, Class of 2030</h2>
-                <h4 class="mb-0">Website Manager</h4>
+                <h4 class="mb-0">Website Administrator, Co-Founder</h4>
               </div>
             </div>
           </div>
