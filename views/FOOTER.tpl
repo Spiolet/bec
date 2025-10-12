@@ -23,7 +23,7 @@
         <div class="col-md-3 mb-3">
             <h5>Contact</h5>
             <p>Email: <a href="mailto:spiolet3456@gmail.com " class="text-light">spiolet3456@gmail.com </a></p>
-            <p>Phone: (617) 435-2725</p>
+            <p>Email: <a href="mailto:brianlixl2009@gmail.com " class="text-light">brianlixl2009@gmail.com </a></p>
         </div>
         </div>
         <hr class="border-secondary">
