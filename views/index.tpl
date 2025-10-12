@@ -159,7 +159,7 @@
           </div>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
-              <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
+              <div class="col-3"><img src="/static/pics/twbh.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Taylor Pan, Class of 2027</h2>
                 <h4 class="mb-0">High School Ambassador</h4>
