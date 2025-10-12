@@ -17,6 +17,54 @@
             main {
             flex: 1; /* 主体区域自动撑开 */
             }
+            /* -------- Article list beautify -------- */
+            .list-group {
+            border: none;
+            margin-top: 10px;
+            }
+
+            .list-group-item {
+            border: none;
+            border-bottom: 1px solid #eaeaea;
+            padding: 14px 18px;
+            background-color: #fff;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            }
+
+            .list-group-item:last-child {
+            border-bottom: none;
+            }
+
+            .list-group-item a {
+            text-decoration: none;
+            color: #212529;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+            .list-group-item a::after {
+            content: "›";  /* 箭头符号 */
+            font-size: 1.2rem;
+            color: #aaa;
+            transition: transform 0.2s ease, color 0.2s ease;
+            }
+
+            .list-group-item:hover {
+            background-color: #f8f9fa;
+            }
+
+            .list-group-item:hover a {
+            color: #198754;
+            }
+
+            .list-group-item:hover a::after {
+            transform: translateX(4px);
+            color: #198754;
+            }
+
         </style>
     </head>
     <body>
@@ -26,7 +74,6 @@
             <div class="container white-bg">
                 <div class="row p-3">
                     <h1> Articles </h1>
-                    <h3> Course Recaps </h3>
                     <ul class="list-group">
                         % for item in recaps:
                             <li class="list-group-item">

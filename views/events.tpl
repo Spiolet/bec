@@ -42,7 +42,7 @@
         /* Carousel 控制按钮绿色圆形 */
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            background-color: rgba(25, 135, 84, 0.8);
+            background-color: rgba(25, 135, 84, 0);
             border-radius: 50%;
             padding: 18px;
         }
@@ -145,9 +145,7 @@
                             <h5 class="mb-1">${item.title}</h5>
                             <small class="w-auto text-nowrap">${item.time}</small>
                         </div>
-                        ${fmoreset.has(i) ? 
-                            `<p class="mb-1">${item.detail} <a href="#" onclick="fless(${i})">show less</a></p>` :
-                            `<p class="mb-1">${item.short} <a href="#" onclick="fmore(${i})">show more</a></p>`}
+                        <p class="mb-1">${item.detail}</p> 
                     </div>`;
                 });
             }).catch(err=>console.error(err));

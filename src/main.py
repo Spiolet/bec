@@ -11,6 +11,24 @@ NAVBAR =(
     {'url':'/cr','name': 'Articles'},
     {'url':'/events','name': 'Events'}
 )
+
+EVENTS_PAST =(
+    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': 'The first time the Boston Eaglets Club worked in the field. Together we raised over a thousand dollars for the tournament directors. This funding led the tournament to bring the kids to better courses for the next seasons.'},
+)
+for item in EVENTS_PAST:
+    item['short']= item['detail']
+    item['short']=item['short'].split(".")
+    item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
+
+EVENTS_FUTURE =(
+    {'title':'Funding at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': 'Future event at Falmouth Country Club.'},
+)
+
+for item in EVENTS_FUTURE:
+    item['short']= item['detail']
+    item['short']=item['short'].split(".")
+    item['short'] = item['short'][0]+ "."+(item['short'][1]+'.' if item['short'][1] else '')
+
 @route('/')
 def homepage():
     return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album()[0:5], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
@@ -26,23 +44,6 @@ def about():
 @route('/favicon.ico')
 def beclogostuff ():
     return static_file ('BEC-logo.ico', '.')
-
-EVENTS_PAST =(
-    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': 'technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies.show less'},
-)
-for item in EVENTS_PAST:
-    item['short']= item['detail']
-    item['short']=item['short'].split(".")
-    item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
-
-EVENTS_FUTURE =(
-    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2025-10-26', 'detail': 'technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies. technoblade never dies.show less'},
-)
-
-for item in EVENTS_FUTURE:
-    item['short']= item['detail']
-    item['short']=item['short'].split(".")
-    item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 @route('/events')
 def events():
@@ -124,82 +125,7 @@ def crc (name):
     with open('recaps/'+name+'.md', 'r', encoding='utf-8') as f:
         t=f.read()
         html = markdown.markdown(t)
-        return template('course_recapv2', NAVBAR=NAVBAR, html=html)
+        return template('course_recapv2', NAVBAR=NAVBAR, html=html, title=name)
 
-
-
-
-
-
-
-
-
-
-
-
-for item in os.walk("./static/album"):
-    print(item)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-run(host='0.0.0.0', port=80)
+if __name__ == '__main__':
+    run(host='0.0.0.0', port=80)

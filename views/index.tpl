@@ -141,7 +141,7 @@
           <h1 class="section-title">Members</h1>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
-              <div class="col-4"><img src="/static/pics/BWBH.png" class="founder-img"></div>
+              <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Brian Li, Class of 2027</h2>
                 <h4 class="mb-0">President</h4>
@@ -150,7 +150,7 @@
           </div>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
-              <div class="col-4"><img src="/static/pics/SWBH.png" class="founder-img"></div>
+              <div class="col-3"><img src="/static/pics/SWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Spencer Wu, Class of 2030</h2>
                 <h4 class="mb-0">Website Manager</h4>
@@ -159,7 +159,16 @@
           </div>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
-              <div class="col-4"><img src="/static/pics/JWBH.png" class="founder-img"></div>
+              <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
+              <div class="col-8 text-center">
+                <h2>Taylor Pan, Class of 2027</h2>
+                <h4 class="mb-0">High School Ambassador</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card p-3 mb-3">
+            <div class="row g-3 align-items-center">
+              <div class="col-3"><img src="/static/pics/JWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Jayden Wu, Class of 2032</h2>
                 <h4 class="mb-0">Middle School Ambassador</h4>

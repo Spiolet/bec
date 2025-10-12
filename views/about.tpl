@@ -47,7 +47,7 @@
           <h3 class="text-success">Contact</h3>
           <p>
             Brian Li: <a href="mailto:brianlixl2009@gmail.com">brianlixl2009@gmail.com</a><br>
-            Haohang Wu: <a href="mailto:spiolet3456@gmail.com">spiolet3456@gmail.com</a>
+            Spencer Wu: <a href="mailto:spiolet3456@gmail.com">spiolet3456@gmail.com</a>
           </p>
         </div>
       </div>
@@ -55,20 +55,20 @@
       <!-- Members Section -->
       <h2 class="text-center text-success my-4">Meet Our Members</h2>
 
-      <!-- Haohang -->
+      <!-- Spencer -->
       <div class="row align-items-center my-4">
         <div class="col-md-4">
-          <img src="/static/pics/Spencer.png" alt="Haohang Wu" class="img-fluid rounded shadow-sm">
+          <img src="/static/pics/Spencer.png" alt="Spencer Wu" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-8">
-          <h3 class="text-success">Haohang Wu</h3>
+          <h3 class="text-success">Spencer Wu</h3>
           <p>
-            Haohang Wu is a thirteen year old boy in eighth grade who goes to The Fessenden School. 
+            Spencer Wu is a thirteen year old boy in eighth grade who goes to The Fessenden School. 
             He likes to read and to do a lot of research on science topics. He also loves watching Veritasium on YouTube. 
-            Spencer teamed up with Brian Li and his little brother Jayden Wu and created the Boston Eaglets Club.
+           Spencer teamed up with Brian Li and his little brother Jayden Wu and created the Boston Eaglets Club.
           </p>
           <a href="mailto:spiolet3456@gmail.com" class="btn btn-sm btn-outline-success">
-            <i class="bi bi-envelope"></i> Email Haohang
+            <i class="bi bi-envelope"></i> Email Spencer
           </a>
         </div>
       </div>
@@ -96,20 +96,55 @@
       </div>
       <hr>
 
-      <!-- Junhang -->
+      <!-- Taylor -->
       <div class="row align-items-center my-4">
         <div class="col-md-4">
-          <img src="/static/pics/gpwf.png" alt="Junhang Wu" class="img-fluid rounded shadow-sm">
+          <img src="/static/pics/gpwf.png" alt="Taylor Pan" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-8">
-          <h3 class="text-success">Junhang Wu</h3>
+          <h3 class="text-success">Taylor Pan</h3>
           <p>
-            Junhang Wu is a ten year old boy in fifth grade who goes to The Fessenden School in Newton, Massachusetts. 
+            placeholder
+          </p>
+          <a href="mailto:placeholder" class="btn btn-sm btn-outline-success">
+            <i class="bi bi-envelope"></i> Email Taylor
+          </a>
+        </div>
+
+      </div>
+      <hr>
+
+      <!-- Bryant -->
+      <div class="row align-items-center my-4">
+        <div class="col-md-8">
+          <h3 class="text-success">Bryant Cai</h3>
+          <p>
+            placeholder
+          </p>
+          <a href="mailto:" class="btn btn-sm btn-outline-success">
+            <i class="bi bi-envelope"></i> Email Bryant
+          </a>
+        </div>
+        <div class="col-md-4">
+          <img src="/static/pics/gpwf.png" alt="Bryant Cai" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+      <hr>
+
+      <!-- Jayden -->
+      <div class="row align-items-center my-4">
+        <div class="col-md-4">
+          <img src="/static/pics/gpwf.png" alt="Jayden Wu" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-8">
+          <h3 class="text-success">Jayden Wu</h3>
+          <p>
+            Jayden Wu is a ten year old boy in fifth grade who goes to The Fessenden School in Newton, Massachusetts. 
             He liked reading the Harry Potter series and loves to learn a lot about animals, especially dogs and bunnies. 
-            He also loves watching Mark Rober and PGA Tour. Jayden teamed up with Brian Li and his big brother, Spencer, to create the Boston Eaglets Club.
+            He also loves watching Mark Rober and PGA Tour. Jayden teamed up with Brian Li and his big brother,Spencer, to create the Boston Eaglets Club.
           </p>
           <a href="mailto:jayden.wu0220@gmail.com" class="btn btn-sm btn-outline-success">
-            <i class="bi bi-envelope"></i> Email Junhang
+            <i class="bi bi-envelope"></i> Email Jayden
           </a>
         </div>
       </div>

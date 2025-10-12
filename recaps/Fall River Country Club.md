@@ -48,10 +48,10 @@ Blind tee shot. Slight uphill and dogleg left. Aim for your tee shot to be a lit
 ### Hole 15: par 3
 Downhill par 3 with bunkers on both sides and sloppy green. Pay attention to the pin location and make sure you play enough break. The miss is to be just short to leave a fairly straight foward chip.
 
-### ### Hole 16: par 4
+### Hole 16: par 4
 Short uphill par 4 that demands a good tee shot. Could be an iron or wood to lay up as the fairway runs out. Be mindful that going left on the tee shot could result in you being blocked out by trees on the approach. Blind approach shot uphill usually. Bail out right if you need to. 
 
-Hole 17: 
+### Hole 17: 
 Severe Dogleg right. Do not be too greedy and try to hit it long off the tee as if you risk going through and into the woods. Make sure you have enough club to carry the hazard though. Play a slight cut if possible. Approach shot is blind as well so make sure you add enough yardage with the uphill.
 
 ### Hole 18: 
