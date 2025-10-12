@@ -13,7 +13,7 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
-    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': 'The first time the Boston Eaglets Club worked in the field. Together we raised over a thousand dollars for the tournament directors. This funding led the tournament to bring the kids to better courses for the next seasons.'},
+    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': "The 2024 Fall Season Championship at Acushnet River Valley Golf Course was the first event where the Boston Eaglets Club volunteered together on the course. Our team helped raise over $2,000 for the foundation to support future tournaments. These funds will help U.S. Kids Golf host upcoming events at higher-quality courses and create even better experiences for junior golfers in the seasons ahead.A big thank-you to all the volunteers who helped make this event a success — and we cant wait to see even more young golfers join us next season!"},
 )
 for item in EVENTS_PAST:
     item['short']= item['detail']
