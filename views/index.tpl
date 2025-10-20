@@ -110,7 +110,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/static/pics/group_pic.png" class="d-block w-100" alt="pic1">
+                <img src="/static/pics/FGM.png" class="d-block w-100" alt="pic1">
               </div>
               <div class="carousel-item">
                 <img src="/static/pics/group_pic.png" class="d-block w-100" alt="pic2">
@@ -132,6 +132,9 @@
           <p class="lead">
             In golf, an "eagle" represents excellence, ambition, and skill. The Boston Eaglets Club takes inspiration from this, creating a space for local young golfers to spread their wings and soar. Our club consists of young players from the Boston area to play, compete, and support each other in golf and beyond.The Boston Eaglets Club is all about fostering a love for golf by building a fun, supportive community. We welcome young golfers of all skill levels, encouraging everyone to grow, make friends, and enjoy the game. Beyond golf, we believe in giving back to our community through volunteer work and fundraising, helping make a positive impact on and off the course.
           </p>
+          <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
+            Join us! <i class="bi bi-send-plus"></i>
+          </a>
         </div>
       </div>
 

@@ -13,7 +13,7 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
-    {'title':'Funding at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': "The 2024 Fall Season Championship at Acushnet River Valley Golf Course was the first event where the Boston Eaglets Club volunteered together on the course. Our team helped raise over $2,000 for the foundation to support future tournaments. These funds will help U.S. Kids Golf host upcoming events at higher-quality courses and create even better experiences for junior golfers in the seasons ahead.A big thank-you to all the volunteers who helped make this event a success — and we cant wait to see even more young golfers join us next season!"},
+    {'title':'Fundraising at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': "The 2024 Fall Season Championship at Acushnet River Valley Golf Course was the first event where the Boston Eaglets Club volunteered together on the course. Our team helped raise over $2,000 for the foundation to support future tournaments. These funds will help U.S. Kids Golf host upcoming events at higher-quality courses and create even better experiences for junior golfers in the seasons ahead.A big thank-you to all the volunteers who helped make this event a success — and we cant wait to see even more young golfers join us next season!"},
 )
 for item in EVENTS_PAST:
     item['short']= item['detail']
@@ -21,7 +21,7 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    {'title':'Funding at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': 'Future event at Falmouth Country Club.'},
+    {'title':'Fundraising at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
 for item in EVENTS_FUTURE:
@@ -118,14 +118,14 @@ def get_recaps():
 
 @route('/cr')
 def cr():
-    return template('course_recap', NAVBAR=NAVBAR, recaps=get_recaps())
+    return template('article_list', NAVBAR=NAVBAR, recaps=get_recaps())
 
 @route('/crc/<name>')
 def crc (name):
     with open('recaps/'+name+'.md', 'r', encoding='utf-8') as f:
         t=f.read()
         html = markdown.markdown(t)
-        return template('course_recapv2', NAVBAR=NAVBAR, html=html, title=name)
+        return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name)
 
 if __name__ == '__main__':
     run(host='0.0.0.0', port=80)
