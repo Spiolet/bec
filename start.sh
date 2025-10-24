@@ -1,0 +1,1 @@
+nohup uv run src/main.py >log.txt 2>&1 &
