@@ -24,7 +24,7 @@ EVENTS_FUTURE =(
     {'title':'Fundraising at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
-for item in EVENTS_FUTURE:
+for item in EVENTS_FUTURE: 
     item['short']= item['detail']
     item['short']=item['short'].split(".")
     item['short'] = item['short'][0]+ "."+(item['short'][1]+'.' if item['short'][1] else '')
