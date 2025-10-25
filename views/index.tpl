@@ -141,7 +141,7 @@
       <!-- Founders & Events -->
       <div class="row g-4 mb-5">
         <div class="col-md-6">
-          <h1 class="section-title">Members</h1>
+          <h1 class="section-title">Meet The Team</h1>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
