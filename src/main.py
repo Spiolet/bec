@@ -13,7 +13,8 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
-    {'title':'Fundraising at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': "The 2024 Fall Season Championship at Acushnet River Valley Golf Course was the first event where the Boston Eaglets Club volunteered together on the course. Our team helped raise over $2,000 for the foundation to support future tournaments. These funds will help U.S. Kids Golf host upcoming events at higher-quality courses and create even better experiences for junior golfers in the seasons ahead.A big thank-you to all the volunteers who helped make this event a success — and we cant wait to see even more young golfers join us next season!"},
+    {'title':'Fundraising at Us Kids 2024 Fall Season Championship', 'time': '2024-10-26', 'detail': "The 2024 Fall Season Championship at Falmouth Country Club was the first event where the Boston Eaglets Club volunteered together on the course. Our team helped raise over $2,000 for the foundation to support future tournaments. These funds will help U.S. Kids Golf host upcoming events at higher-quality courses and create even better experiences for junior golfers in the seasons ahead.A big thank-you to all the volunteers who helped make this event a success — and we can't wait to see even more young golfers join us next season!"},
+    {'title':'Fundraising at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': "placeholder."}
 )
 for item in EVENTS_PAST:
     item['short']= item['detail']
@@ -21,7 +22,7 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    {'title':'Fundraising at Us Kids 2025 Fall Season Championship', 'time': '2025-10-25', 'detail': 'Future event at Falmouth Country Club.'},
+    {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': '2026-10-25', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
 for item in EVENTS_FUTURE: 
