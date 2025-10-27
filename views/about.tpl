@@ -104,7 +104,7 @@
         <div class="col-md-8">
           <h3 class="text-success">Taylor Pan</h3>
           <p>
-            placeholder
+            Taylor Pan attends Wellesley High School, in Wellesley, Massachusetts, as a part of the class of 2027. Starting golf 4 years ago and practicing at Leo J. Martin, he would enter his first golf tournament in the summer of 2021. Taylor since had competed in higher levels of competition as his interests in the game expanded, and would volunteer at multiple golf tournaments, looking to grow the game.  
           </p>
           <a href="mailto:placeholder" class="btn btn-sm btn-outline-success">
             <i class="bi bi-envelope"></i> Email Taylor
