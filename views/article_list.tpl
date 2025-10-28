@@ -78,7 +78,7 @@
                         % for item in recaps:
                             <li class="list-group-item">
                                 <a href="/crc/{{item[0]}}">
-                                {{item[0]}} </a>
+                                {{item[0].split('+')[1]}} </a>
                             </li>
                             %end
                     </ul>

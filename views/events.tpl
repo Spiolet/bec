@@ -82,10 +82,10 @@
                         <div class="carousel-item active">
                             <img src="/static/event_pics/1.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <img src="/static/event_pics/2.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <img src="/static/event_pics/3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
