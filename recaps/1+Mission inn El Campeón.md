@@ -1,3 +1,7 @@
+# Mission Inn El Campeón
+## Spencer Haohang Wu
+### 12-28-2024
+
 ### Hole #1 
 A par 5 to start off your round, with water running through the fairway right after the tee boxes. After that, it’s pretty straight with a tree in the middle.
 

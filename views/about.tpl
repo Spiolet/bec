@@ -61,7 +61,7 @@
           <img src="/static/pics/Spencer.png" alt="Spencer Wu" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-8">
-          <h3 class="text-success">Spencer Wu</h3>
+          <h3 class="text-success">Spencer Haohang Wu</h3>
           <p>
             Spencer Wu is a thirteen year old boy in eighth grade who goes to The Fessenden School. 
             He likes to read and to do a lot of research on science topics. He also loves watching Veritasium on YouTube. 
@@ -137,7 +137,7 @@
           <img src="/static/pics/gpwf.png" alt="Jayden Wu" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-8">
-          <h3 class="text-success">Jayden Wu</h3>
+          <h3 class="text-success">Jayden Junhang Wu</h3>
           <p>
             Jayden Wu is a ten year old boy in fifth grade who goes to The Fessenden School in Newton, Massachusetts. 
             He liked reading the Harry Potter series and loves to learn a lot about animals, especially dogs and bunnies. 

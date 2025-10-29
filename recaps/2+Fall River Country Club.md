@@ -1,5 +1,6 @@
 # Fall River Country Club
-## Fall River, MA
+## Brian Li
+### 08-31-2025
 
 ### Hole 1: Par 5
 A steady hole to start the round. Aim to miss a little right off the tee as the left is trouble. Fairly common approach shot with a back-to-front green.

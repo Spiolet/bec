@@ -128,9 +128,9 @@
           </div>
         </div>
         <div class="col-md-6">
-          <h1 class="section-title">Introduction</h1>
+          <h1 class="section-title">About the Boston Eaglets Club</h1>
           <p class="lead">
-            In golf, an "eagle" represents excellence, ambition, and skill. The Boston Eaglets Club takes inspiration from this, creating a space for local young golfers to spread their wings and soar. Our club consists of young players from the Boston area to play, compete, and support each other in golf and beyond.The Boston Eaglets Club is all about fostering a love for golf by building a fun, supportive community. We welcome young golfers of all skill levels, encouraging everyone to grow, make friends, and enjoy the game. Beyond golf, we believe in giving back to our community through volunteer work and fundraising, helping make a positive impact on and off the course.
+            A welcoming community for junior golfers across Greater Boston—open to all levels. We play, learn, and support each other on and off the course.
           </p>
           <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
             Join us! <i class="bi bi-send-plus"></i>
@@ -146,7 +146,8 @@
             <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
-                <h2>Brian Li, Class of 2027</h2>
+                <h2>Brian Li</h2>
+                <h3>Class of 2027</h3>
                 <h4 class="mb-0">President, Founder</h4>
               </div>
             </div>
@@ -155,7 +156,8 @@
             <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/SWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
-                <h2>Spencer Wu, Class of 2030</h2>
+                <h2>Spencer Haohang Wu</h2>
+                <h3>Class of 2030</h3>
                 <h4 class="mb-0">Website Administrator, Co-Founder</h4>
               </div>
             </div>
@@ -164,7 +166,8 @@
             <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/twbh.png" class="founder-img"></div>
               <div class="col-8 text-center">
-                <h2>Taylor Pan, Class of 2027</h2>
+                <h2>Taylor Pan</h2>
+                <h3>Class of 2027</3>
                 <h4 class="mb-0">High School Ambassador</h4>
               </div>
             </div>
@@ -173,7 +176,8 @@
             <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/JWBH.png" class="founder-img"></div>
               <div class="col-8 text-center">
-                <h2>Jayden Wu, Class of 2032</h2>
+                <h2>Jayden Junhang Wu</h2>
+                <h3>Class of 2032</3>
                 <h4 class="mb-0">Middle School Ambassador</h4>
               </div>
             </div>

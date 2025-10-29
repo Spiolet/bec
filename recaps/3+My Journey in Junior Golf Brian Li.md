@@ -1,4 +1,6 @@
-My Journey in Junior Golf
+## My Journey in Junior Golf
+### Brian Li
+#### 09-05-2025
 
 I first picked up a golf club when I was nine years old and instantly fell in love with the game. My dad bought me a small set of U.S. Kids Golf clubs that happened to be on sale, and we would often head to McGolf Driving Range to practice and take swing lessons every week. Two years later, my dad signed me up for my very first tournament — a local U.S. Kids Golf event at Gardner Municipal Golf Course. I shot a 91, which honestly exceeded my expectations and made me even more passionate about the sport. In the following two years, I played in more U.S. Kids tournaments, racking up a couple of first-place finishes and medals that motivated me to keep improving. 
 
