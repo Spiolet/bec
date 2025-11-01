@@ -33,12 +33,12 @@
       <div class="card shadow-sm border-success mb-4">
         <div class="card-body">
           <h3 class="text-success">How to Join Us</h3>
-          <ul>
-            <li>No membership required — just show up, play golf and have fun!</li>
-            <li>Make friends and share golf experiences with others.</li>
-            <li>Take on leadership roles during our annual fundraising events.</li>
-            <li>Volunteer and give back to the community when you're a high school student.</li>
-          </ul>
+            <div class="col-md-6">
+              </p>
+              <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
+                Join us! <i class="bi bi-send-plus"></i>
+              </a>
+            </div>
         </div>
       </div>
 
@@ -51,9 +51,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Members Section -->
-      <h2 class="text-center text-success my-4">Meet Our Members</h2>
 
       <!-- Spencer -->
       <div class="row align-items-center my-4">
