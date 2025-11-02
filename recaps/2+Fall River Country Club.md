@@ -57,3 +57,8 @@ Severe Dogleg right. Do not be too greedy and try to hit it long off the tee as 
 
 ### Hole 18: 
 Slight dogleg left. Trees left and the 10th hole on the right. Important tee shot to finish off the round strong. Tricky green with severe slope. Bunkers on either side of the green. 
+
+
+![](/static/ap/frcc1.jpg)
+![](/static/ap/frcc2.jpg)
+![](/static/ap/frcc3.jpg)

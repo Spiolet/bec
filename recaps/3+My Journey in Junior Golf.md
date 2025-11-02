@@ -13,3 +13,7 @@ That miracle week at the AJGA tournament gave me all the confidence I needed to 
 At the end of my sophomore spring, at the HJGT Massachusetts Spring Open in Chicopee, I picked up my first major victory after coming from behind with a 71 in brutal conditions on the second day. That win kick-started my summer, when I competed in an AJGA tournament in Kentucky. I shot 75, 73, and 68 to finish tied for 21st — my best result in a national tournament so far. In the following weeks, I played in more Challenge Cup tournaments, highlighted by a fifth-place finish among 118 players at the U.S. Challenge Cup Boys Championship. 
 
 However, those achievements didn’t come without setbacks. I missed the cut in my remaining four AJGA events by just one or two strokes, leaving early for the airport and replaying the decisions I made on the course in my head. As my sophomore summer came to an end, I reflected on all the highs and lows of my season. I hope that by learning from these experiences and building on my setbacks, I can continue to grow and reach my full potential — both mentally and physically.
+
+![](/static/ap/mgj1.jpg)
+![](/static/ap/mgj2.jpg)
+![](/static/ap/mgj2.jpg)
