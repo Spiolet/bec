@@ -4,6 +4,7 @@
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/bootstrap-icons.min.css" rel="stylesheet">
     <link href="/static/css/bgi.css" rel="stylesheet">
+    <link href="/static/css/listgroup.css" rel="stylesheet">
     <style>
       .container {
         background-color: #f8f9fa;
@@ -243,9 +244,9 @@
         <div class="col-md-6">
           <h1 class="section-title">Recaps</h1>
           <div class="card p-3 mb-3">
-            <ul class="list-group list-group-flush">
+            <ul class="list-group-recaps" style="margin-top:0px; margin-bottom:0px">
               % for item in recaps:
-              <li class="list-group-item"><a href="/crc/{{item[0]}}">{{item[0].split('+')[1]}}</a></li>
+              <li class="list-group-item-recaps" style="padding:7px"><a href="/crc/{{item[0]}}">{{item[0].split('+')[1]}}</a></li>
               %end
             </ul>
           </div>
