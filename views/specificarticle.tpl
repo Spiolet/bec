@@ -88,7 +88,6 @@
         % include('NAVBAR.tpl')
         <div class="container white-bg">
             <div class="row">
-            <h1>{{title.split('+')[1]}}</h1>
             {{!html}}
             </div>
         </div>
