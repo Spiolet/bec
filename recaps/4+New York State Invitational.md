@@ -10,3 +10,6 @@ The next day…
 The next day I shot a 72, making me 5 under for two rounds, at 67, 72. Adding up to 139, making that the best score for me ever for two rounds. 
 
 From this tournament I learned how to control my feelings and my mental health, keeping that smile on my face, coming through even when I got those first three bogies. The achievements I made during this tournament made me feel proud of myself. I made three achievements during this tournament: Playing my first ever bogey free round of 18 holes, shooting my best score, and my best for two rounds. This tournament made my feel special and made me learn about a lot of things that are crucial when it comes to sports.
+
+![](/static/ap/ny1.jpg)
+![](/static/ap/ny2.jpg)

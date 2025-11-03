@@ -16,4 +16,4 @@ However, those achievements didn’t come without setbacks. I missed the cut in 
 
 ![](/static/ap/mgj1.jpg)
 ![](/static/ap/mgj2.jpg)
-![](/static/ap/mgj2.jpg)
+![](/static/ap/mgj3.jpg)
