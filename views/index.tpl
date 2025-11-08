@@ -193,6 +193,16 @@
               </div>
             </div>
           </div>
+          <div class="card p-3 mb-3">
+            <div class="row g-3 align-items-center">
+              <div class="col-3"><img src="/static/pics/bcwbh.png" class="founder-img"></div>
+              <div class="col-8 text-center">
+                <h2>Bryant Cai</h2>
+                <h3>Class of 2028</h3>
+                <h4 class="mb-0">High School Ambassador</h4>
+              </div>
+            </div>
+          </div>
           <a href="/about" class="btn btn-sm btn-outline-success float-end">
             More <i class="bi bi-arrow-right"></i>
           </a>
