@@ -131,7 +131,7 @@
         <div class="col-md-6">
           <h1 class="section-title">About the Boston Eaglets Club</h1>
           <p class="lead">
-            A welcoming community for junior golfers across Greater Boston—open to all levels. We play, learn, and support each other on and off the course.
+            A welcoming community since 2023 for junior golfers across Greater Boston—open to all skill levels. We play, learn, and support one another on and off the course.
           </p>
           <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
             Join us! <i class="bi bi-send-plus"></i>

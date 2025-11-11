@@ -19,7 +19,7 @@
       <div class="card shadow-sm border-success mb-4">
         <div class="card-body">
           <h3 class="text-success">Introduction</h3>
-          <p>In golf, an "eagle" represents excellence, ambition, and skill. The Boston Eaglets Club takes inspiration from this, creating a space for local young golfers to spread their wings and soar. Our club consists of a group of young players from the Boston area to play, compete and support each other in golf and beyond.</p>
+          <p>A welcoming community since 2023 for junior golfers across Greater Boston—open to all skill levels. We play, learn, and support one another on and off the course.</p>
         </div>
       </div>
 
