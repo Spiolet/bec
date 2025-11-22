@@ -5,6 +5,18 @@
     <link href="/static/css/bgi.css" rel="stylesheet">
 
     <style>
+            html, body {
+        height: 100%;
+        margin: 0;
+        }
+        body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+        main {
+            flex: 1; /* 主体区域自动撑开 */
+            }
         /* 保留原来的 tab 结构，只改颜色 */
         .nav-tabs .nav-link {
             background-color: white; /* 保持白色背景 */
@@ -34,6 +46,14 @@
         .list-group-item h5 {
             color: #145c32;
         }
+        .list-group-item h5 a{
+            all:unset;
+            color:inheit;
+            text-decoration:underline;
+        }
+                .list-group-item h5 a:hover{
+            cursor:pointer;
+        }
 
         .list-group-item small {
             color: #6c757d;
@@ -51,10 +71,11 @@
             border-radius: 0.25rem;
         }
     </style>
+    
 </head>
 <body>
     % include('NAVBAR.tpl')
-
+<main>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
@@ -80,13 +101,16 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/static/event_pics/1.jpg" class="d-block w-100" alt="...">
+                            <img src="/static/event_pics/4.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/event_pics/2.jpg" class="d-block w-100" alt="...">
+                            <img src="/static/event_pics/5.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/event_pics/3.jpg" class="d-block w-100" alt="...">
+                            <img src="/static/event_pics/6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/event_pics/7.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -101,7 +125,7 @@
             </div>
         </div>
     </div>
-
+</main>
     <script src="/static/js/bootstrap.bundle.js"></script>
     <script>
         const pastmoreset = new Set();
@@ -117,7 +141,7 @@
                     pastgroup.innerHTML+=
                     `<div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">${item.title}</h5>
+                            <h5 class="mb-1">${item.link?`<a href="${item.link}">${item.title}</a>`:`${item.title}`}</h5>
                             <small class="w-auto text-nowrap">${item.time}</small>
                         </div>
                         ${pastmoreset.has(i) ? 
@@ -142,7 +166,7 @@
                     fgroup.innerHTML+=
                     `<div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">${item.title}</h5>
+                            <h5 class="mb-1">${item.link?`<a href="${item.link}">${item.title}</a>`:`${item.title}`}</h5>
                             <small class="w-auto text-nowrap">${item.time}</small>
                         </div>
                         <p class="mb-1">${item.detail}</p> 
