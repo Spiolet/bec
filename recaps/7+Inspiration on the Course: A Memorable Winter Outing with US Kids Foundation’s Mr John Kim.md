@@ -1,5 +1,6 @@
-## Inspiration on the Course: A Memorable Winter Outing with   U.S. Kids Foundation’s Mr.John Kim
+## A Memorable Winter Outing with   U.S. Kids Foundation’s Mr.John Kim
 #### Brian Li
+##### President of The Boston Eaglets Club
 ##### 11-22-2025
 On November 16th, 2025, the Boston Eaglets Club conducted its first official winter outing at Brae Burn Country Club. More than 25 members joined us, filling the course with excitement from the moment we started at 9:30 a.m. until we wrapped up around 2:30 p.m.
 
@@ -13,6 +14,6 @@ After finishing our round, we all gathered for lunch at my house, accompanied by
 In addition, I enjoyed hearing from the other Eaglets about their aspirations and future goals. Many hoped to one day play collegiate golf, while others saw golf more as a hobby and dreamed of pursuing entirely different paths, including becoming a singer. It was inspiring to see how everyone had their own dreams, yet we were all connected through our shared love of the game.
 In all, this outing was truly unforgettable. I learned a great deal from everyone who attended, and I’m grateful for the friendships, motivation, and inspiration that came from this day. Most importantly, I want to thank Mr. Kim for traveling all the way to Boston to meet our club. His advice and encouragement will stay with us for a long time, and I know this event is only the beginning of many more meaningful experiences ahead for the Boston Eaglets Club.
 
-![](/static/album/18.jpg)
-![](/static/album/19.jpg)
-![](/static/album/20.jpg)
+![](/static/ap/fgm1.jpg)
+![](/static/ap/fgm2.jpg)
+![](/static/ap/fgm3.jpg)
