@@ -129,10 +129,14 @@ def cr():
 
 @route('/crc/<name>')
 def crc (name):
-    with open('recaps/'+name+'.md', 'r', encoding='utf-8') as f:
-        t=f.read()
-        html = markdown.markdown(t)
-        return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name)
-
+    if os.path.exists('recaps/'+name+'.md'):
+        with open('recaps/'+name+'.md', 'r', encoding='utf-8') as f:
+            t=f.read()
+            html = markdown.markdown(t)
+            return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name)
+    else:
+        with open('recaps/'+name+'.ht', 'r', encoding='utf-8') as f:
+            html = f.read()
+            return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name) 
 if __name__ == '__main__':
     run(host='0.0.0.0', port=80)
