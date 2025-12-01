@@ -144,7 +144,7 @@
             </div>
             <div class="col-6 col-md-3 p-0">
               <h2 style="font-size:30px; font-weight:bold;">$4000+</h2>
-              <p>Raced for Tournament</p>
+              <p>Raised for Tournament</p>
             </div>
             <div class="col-6 col-md-3 p-0">
               <h2 style="font-size:30px; font-weight:bold;">10+</h2>
