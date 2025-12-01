@@ -130,12 +130,34 @@
         </div>
         <div class="col-md-6">
           <h1 class="section-title">About the Boston Eaglets Club</h1>
-          <p class="lead">
+          <p class="lead" style="font-weight:normal">
             A welcoming community since 2023 for junior golfers across Greater Boston—open to all skill levels. We play, learn, and support one another on and off the course.
           </p>
           <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
             Join us! <i class="bi bi-send-plus"></i>
           </a>
+          <h1 class="section-title mt-5">Impact at a Glance</h1>
+          <div class="row" style="font-size:15px;text-align:center">
+            <div class="col-6 col-md-3 p-0">
+              <h2 style="font-size:30px; font-weight:bold;">20+</h2>
+              <p>Members</p>
+            </div>
+            <div class="col-6 col-md-3 p-0">
+              <h2 style="font-size:30px; font-weight:bold;">$4000+</h2>
+              <p>Raced for Tournament</p>
+            </div>
+            <div class="col-6 col-md-3 p-0">
+              <h2 style="font-size:30px; font-weight:bold;">10+</h2>
+              <p>Events Organized</p>
+            </div>
+            <div class="col-6 col-md-3 p-0">
+              <h2 style="font-size:30px; font-weight:bold;">120</h2>
+              <p>Volunteer Hours</p>
+            </div>
+          </div>
+          <p class="lead" style="font-weight:normal">
+            Building leadership and sportsmanship through golf - from tournaments to mentorship and community service.
+          </p>
         </div>
       </div>
 
