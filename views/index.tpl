@@ -139,7 +139,7 @@
           <h1 class="section-title mt-5">Impact at a Glance</h1>
           <div class="row" style="font-size:15px;text-align:center">
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">20+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">30+</h2>
               <p>Members</p>
             </div>
             <div class="col-6 col-md-3 p-0">

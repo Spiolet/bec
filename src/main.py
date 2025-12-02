@@ -3,7 +3,7 @@ import os
 import markdown
 import json
 from PIL import Image
-
+from sys import argv
 NAVBAR =(
     {'url':'/','name': 'Homepage'},
     {'url':'/about','name': 'About'},
@@ -140,4 +140,8 @@ def crc (name):
             html = f.read()
             return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name) 
 if __name__ == '__main__':
-    run(host='0.0.0.0', port=80)
+    print(argv)
+    if len(argv)>1 and argv[1]=='pro':
+        run(server="gunicorn", host='0.0.0.0', port=80)
+    else:
+        run(host='0.0.0.0', port=80)
