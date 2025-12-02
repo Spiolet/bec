@@ -1,1 +1,1 @@
-nohup uv run src/main.py >log.txt 2>&1 &
+nohup uv run src/main.py pro >log.txt 2>&1 &
