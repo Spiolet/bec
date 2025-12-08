@@ -1,1 +1,1 @@
-pkill -f "$(pwd)/.venv/bin/python3 src/main.py"
+pkill -f "$(pwd)/.venv/bin/python3 src/main.py pro"
