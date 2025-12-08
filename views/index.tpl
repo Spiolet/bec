@@ -272,9 +272,9 @@
       </div>
 
       <!-- Recaps & Gallery -->
-      <div class="row g-4">
-        <div class="col-md-6">
-          <h1 class="section-title">Recaps</h1>
+      <div class="row mb-5 g-4">
+        <div class="col-md-12">
+          <h1 class="section-title">Articles</h1>
           <div class="card p-3 mb-3">
             <ul class="list-group-recaps" style="margin-top:0px; margin-bottom:0px">
               % for item in recaps:
@@ -286,7 +286,9 @@
             More <i class="bi bi-arrow-right"></i>
           </a>
         </div>
-        <div class="col-md-6">
+      </div>
+      <div class="row g-4">
+        <div class="col-md-12">
           <h1 class="section-title">Gallery</h1>
           <div class="scroll-wrapper mb-3">
             <div class="scroll-content">

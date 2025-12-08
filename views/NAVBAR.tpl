@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container bg-white">  
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/" style="font-size: 25" >
             <img src="/static/pics/10.png"class="img-fluid" style="height:60px">
             Boston Eaglets Club
         </a>
@@ -11,7 +11,7 @@
             <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                 % for item in NAVBAR:
                 <li lass="nav-item">
-                    <a class="nav-link" href="{{ item['url'] }}" style="height:70px;align-content:center">{{item['name'] }}</a>
+                    <a class="nav-link" href="{{ item['url'] }}" style="height:70px;align-content:center; font-size:20">{{item['name'] }}</a>
                 </li>
                 % end
             </ul>

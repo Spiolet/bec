@@ -2,6 +2,7 @@
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-icons.min.css" rel="stylesheet">
         <link href="/static/css/bgi.css" rel="stylesheet">
         <link href="/static/css/listgroup.css" rel="stylesheet">
     
@@ -34,7 +35,12 @@
                         % for item in recaps:
                             <li class="list-group-item-recaps">
                                 <a href="/crc/{{item[0]}}">
-                                {{item[0].split('+')[1]}} </a>
+                                    <span style="flex: 1 1 auto">{{item[0].split('+')[1]}}</span>
+                                    <span style="flex: 0 0 auto; margin-right: 10px; font-size: smaller; font-weight: lighter;">
+                                        <i class="bi bi-person-fill"></i> {{item[0].split('+')[3]}}
+                                        <i class="bi bi-calendar-plus"></i> {{item[0].split('+')[2]}}
+                                    </span>
+                                </a>
                             </li>
                             %end
                     </ul>
