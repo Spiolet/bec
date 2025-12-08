@@ -36,7 +36,7 @@ for item in EVENTS_FUTURE:
 
 @route('/')
 def homepage():
-    return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album()[0:5], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
+    return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album()[0:10], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
 
 @route('/static/<filepath:path>')
 def static_files(filepath):
