@@ -52,7 +52,7 @@
         animation: scroll-left 40s linear infinite;
       }
       .scroll-content img {
-        height: 180px;
+        height: 250px;
         margin-right: 12px;
         border-radius: 0.5rem;
         transition: transform 0.3s;
@@ -102,7 +102,7 @@
 
       <!-- Intro -->
       <div class="row align-items-center mb-5">
-        <div class="col-md-6 mb-4 mb-md-0">
+        <div class="col-md-6 mb-4 mb-md-0" style="padding-right: 25px">
           <div id="carouselExampleIndicators" class="carousel slide shadow rounded overflow-hidden">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
@@ -111,10 +111,10 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic1">
+                <img src="/static/pics/camp poster.png" class="d-block w-100" alt="pic1">
               </div>
               <div class="carousel-item">
-                <img src="/static/pics/group_pic.png" class="d-block w-100" alt="pic2">
+                <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic2">
               </div>
               <div class="carousel-item">
                 <img src="/static/pics/group_pic.png" class="d-block w-100" alt="pic3">
@@ -128,7 +128,7 @@
             </button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding-left: 25px">
           <h1 class="section-title">About the Boston Eaglets Club</h1>
           <p class="lead" style="font-weight:normal">
             A welcoming community since 2023 for junior golfers across Greater Boston—open to all skill levels. We play, learn, and support one another on and off the course.
@@ -136,7 +136,8 @@
           <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
             Join us! <i class="bi bi-send-plus"></i>
           </a>
-          <h1 class="section-title mt-5">Impact at a Glance</h1>
+          <hr>
+          <h1 class="section-title mt-6">Impact at a Glance</h1>
           <div class="row" style="font-size:15px;text-align:center">
             <div class="col-6 col-md-3 p-0">
               <h2 style="font-size:30px; font-weight:bold;">30+</h2>
@@ -163,7 +164,7 @@
 
       <!-- Founders & Events -->
       <div class="row g-4 mb-5">
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding-right:25px">
           <h1 class="section-title">Meet The Team</h1>
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
@@ -229,7 +230,7 @@
             More <i class="bi bi-arrow-right"></i>
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding-left:25">
           <h1 class="section-title">Events</h1>
           <div class="card p-3 mb-3">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -287,7 +288,7 @@
           </a>
         </div>
       </div>
-      <div class="row g-4">
+        <div class="row g-4">
         <div class="col-md-12">
           <h1 class="section-title">Gallery</h1>
           <div class="scroll-wrapper mb-3">

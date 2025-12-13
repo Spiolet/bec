@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-white">
+<nav class="navbar navbar-expand-lg bg-white shadow-lg">
     <div class="container bg-white">  
         <a class="navbar-brand" href="/" style="font-size: 25" >
             <img src="/static/pics/10.png"class="img-fluid" style="height:60px">
