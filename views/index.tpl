@@ -110,14 +110,14 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <img src="/static/pics/camp poster.png" class="d-block w-100" alt="pic1">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item active">
                 <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic2">
               </div>
               <div class="carousel-item">
-                <img src="/static/pics/group_pic.png" class="d-block w-100" alt="pic3">
+                <img src="/static/pics/serrasota.png" class="d-block w-100" alt="pic3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
