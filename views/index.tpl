@@ -88,6 +88,14 @@
       .list-group-item:hover {
         background-color: #e8f5e9;
       }
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23198754'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+        background-color: rgba(201,201,201,0.3);
+      }
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23198754'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-color: rgba(201,201,201,0.3);
+      }
     </style>
   </head>
   <body>
@@ -103,7 +111,7 @@
       <!-- Intro -->
       <div class="row align-items-center mb-5">
         <div class="col-md-6 mb-4 mb-md-0" style="padding-right: 25px">
-          <div id="carouselExampleIndicators" class="carousel slide shadow rounded overflow-hidden">
+          <div id="carouselExampleIndicators" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
@@ -120,10 +128,10 @@
                 <img src="/static/pics/serrasota.png" class="d-block w-100" alt="pic3">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" style="width:5%" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" style="width:5%" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
@@ -234,13 +242,13 @@
           <h1 class="section-title">Events</h1>
           <div class="card p-3 mb-3">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#past-tab-pane">Past</button></li>
-              <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#future-tab-pane">Future</button></li>
+              <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#future-tab-pane">Future</button></li>
+              <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#past-tab-pane">Past</button></li>
             </ul>
             <div class="tab-content mt-3">
-              <div class="tab-pane fade show active" id="past-tab-pane">
+              <div class="tab-pane fade show active" id="future-tab-pane">
                 <div class="list-group">
-                  % for item in EVENTS_PAST:
+                  % for item in EVENTS_FUTURE:
                   <div class="list-group-item">
                     <div class="d-flex justify-content-between">
                       <h5>{{ item['title'] }}</h5>
@@ -251,9 +259,9 @@
                   % end
                 </div>
               </div>
-              <div class="tab-pane fade" id="future-tab-pane">
+              <div class="tab-pane fade" id="past-tab-pane">
                 <div class="list-group">
-                  % for item in EVENTS_FUTURE:
+                  % for item in EVENTS_PAST:
                   <div class="list-group-item">
                     <div class="d-flex justify-content-between">
                       <h5>{{ item['title'] }}</h5>

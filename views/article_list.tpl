@@ -36,10 +36,7 @@
                             <li class="list-group-item-recaps">
                                 <a href="/crc/{{item[0]}}">
                                     <span style="flex: 1 1 auto">{{item[0].split('+')[1]}}</span>
-                                    <span style="flex: 0 0 auto; margin-right: 10px; font-size: smaller; font-weight: lighter;">
-                                        <i class="bi bi-person-fill"></i> {{item[0].split('+')[3]}}
-                                        <i class="bi bi-calendar-plus"></i> {{item[0].split('+')[2]}}
-                                    </span>
+                                    <span style="flex: 0 0 auto; margin-right: 10px; font-size: smaller; font-weight: lighter;"><i class="bi bi-calendar-plus"></i> {{item[0].split('+')[2]}}</span>
                                 </a>
                             </li>
                             %end

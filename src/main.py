@@ -9,7 +9,8 @@ NAVBAR =(
     {'url':'/about','name': 'About'},
     {'url':'/gallery','name':'Gallery'},
     {'url':'/cr','name': 'Articles'},
-    {'url':'/events','name': 'Events'}
+    {'url':'/events','name': 'Events'},
+    {'url':'/donate','name': 'Donate'}
 )
 
 EVENTS_PAST =(
@@ -127,7 +128,7 @@ def get_recaps():
 
 @route('/donate')
 def donate():
-    return template()
+    return template('donate', NAVBAR=NAVBAR)
 
 @route('/cr')
 def cr():
