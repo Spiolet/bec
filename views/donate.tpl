@@ -43,8 +43,8 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div class="card p-3 mb-3">
-              <h1>Title</h1>
-              <p>blblblb blblb blbl blb blb lb lblb lb lb lb lblblblblb blblb lblb lblb</p>
+              <h1>How can you help us?</h1>
+              <p>Thank you for all the support, introducing the wonderful game of golf to more kids and families!</p>
               <p>Contract: Wendyhu2511@gmail.com</p>
             </div>
           </div>
