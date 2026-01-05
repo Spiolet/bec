@@ -45,7 +45,7 @@
             <div class="card p-3 mb-3">
               <h1>How can you help us?</h1>
               <p>Thank you for all the support, introducing the wonderful game of golf to more kids and families!</p>
-              <p>Contract: Wendyhu2511@gmail.com</p>
+              <p>Contact: Wendyhu2511@gmail.com</p>
             </div>
           </div>
         </div>
