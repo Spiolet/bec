@@ -57,42 +57,39 @@ def events():
     return template('events', NAVBAR=NAVBAR, EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
 
 def generate_thumbnail(image_path):
-    """
-    Generate a thumbnail for an image.
-
-    :param image_path: Path to the original image (e.g., "./static/album/xxx.jpg")
-    :param size: Desired thumbnail size (width, height)
-    :return: Path to the saved thumbnail
-    """
-    # Ensure output folder exists
     thumb_dir = "./static/thumb"
     os.makedirs(thumb_dir, exist_ok=True)
 
-    # Extract filename
     filename = os.path.basename(image_path)
     thumb_path = os.path.join(thumb_dir, filename)
 
-    # Open and generate thumbnail
     with Image.open(image_path) as img:
-        # Correct orientation using EXIF data if available
+        # Fix EXIF orientation
         try:
             exif = img._getexif()
-            if exif is not None:
-                for tag, value in exif.items():
-                    if tag == 274:  # Orientation tag
-                        if value == 3:
-                            img = img.rotate(180, expand=True)
-                        elif value == 6:
-                            img = img.rotate(270, expand=True)
-                        elif value == 8:
-                            img = img.rotate(90, expand=True)
-        except (AttributeError, KeyError, IndexError):
-            # No EXIF data or EXIF doesn't have orientation info
+            if exif:
+                orientation = exif.get(274)
+                if orientation == 3:
+                    img = img.rotate(180, expand=True)
+                elif orientation == 6:
+                    img = img.rotate(270, expand=True)
+                elif orientation == 8:
+                    img = img.rotate(90, expand=True)
+        except Exception:
             pass
-        img.thumbnail((400, img.height*400/img.width))
+
+        # Resize
+        new_height = int(img.height * 400 / img.width)
+        img.thumbnail((400, new_height))
+
+        # 🔥 THIS IS THE IMPORTANT PART
+        if img.mode in ("RGBA", "LA"):
+            img = img.convert("RGB")
+
         img.save(thumb_path, "JPEG")
 
     return thumb_path
+
 
 def get_album():
     l=list(os.walk("./static/album"))[0][2]
