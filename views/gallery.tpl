@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <style>
+            .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #ffffff;
+            } 
             .thumb { cursor: pointer; }
 
             #imageModal .modal-dialog {
@@ -70,16 +77,23 @@
     <body>
         % include('NAVBAR.tpl')
         <div class="container">
-            <div class="row my-masonry">
-                % for item in album:
-                <div class="masonry-item mb-3 col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                    <img src="/static/thumb/{{item}}" 
-                         alt="a cool photo" 
-                         class="img-fluid thumb" 
-                         data-fullsize="/static/album/{{item}}">
+        % for event, pics in album:
+            <div class="row card mt-1">
+            
+                <h1>{{event.split('+')[0]}}</h1>
+                <div class="row my-masonry">
+
+                    % for item in pics:
+                        <div class="masonry-item mb-3 col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                            <img src="/static/thumb/{{event}}/{{item}}" 
+                                alt="a cool photo" 
+                                class="img-fluid thumb" 
+                                data-fullsize="/static/album/{{event}}/{{item}}">
+                        </div>
+                    % end
                 </div>
-                % end
             </div>
+            % end
         </div>
 
         <!-- Modal -->
@@ -101,10 +115,12 @@
         <script src="/static/js/masonry.pkgd.min.js"></script>
         <script src="/static/js/imagesloaded.pkgd.min.js"></script>
         <script>
-            var grid = document.querySelector('.my-masonry');
-            var msnry = new Masonry(grid, { itemSelector: '.masonry-item', percentPosition: true });
-            imagesLoaded(grid, function() { msnry.layout(); });
-
+            var grids= document.querySelectorAll('.my-masonry');
+            //for (let i=0; i<grids.length; i++){
+            //    var grid=grids[i];
+            //var msnry = new Masonry(grid, { itemSelector: '.masonry-item', percentPosition: true });
+            //imagesLoaded(grid, function() { msnry.layout(); });
+            //}
             var thumbnails = document.querySelectorAll('.thumb');
             var modalImage = document.getElementById('modalImage');
             var currentIndex = -1;

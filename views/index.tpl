@@ -49,7 +49,7 @@
       .scroll-content {
         display: flex;
         width: max-content;
-        animation: scroll-left 40s linear infinite;
+        animation: scroll-left 120s linear infinite;
       }
       .scroll-content img {
         height: 250px;
@@ -301,11 +301,15 @@
           <h1 class="section-title">Gallery</h1>
           <div class="scroll-wrapper mb-3">
             <div class="scroll-content">
-              % for index, item in enumerate(album):
-              <img src="/static/thumb/{{item}}" alt="{{index}}">
+              % for event, pics in album:
+                  % for item in pics:
+                      <img src="/static/thumb/{{event}}/{{item}}">
+                  % end
               % end
-              % for index, item in enumerate(album):
-              <img src="/static/thumb/{{item}}" alt="{{index}}">
+              % for event, pics in album:
+                  % for item in pics:
+                      <img src="/static/thumb/{{event}}/{{item}}">
+                  % end
               % end
             </div>
           </div>
