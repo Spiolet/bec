@@ -122,10 +122,10 @@ def get_recaps():
     l=filter(lambda x:x!='.DS_Store', l)
     l=[[int(f.split('+')[0]), f] for f in l]
     l=sorted(l,key=lambda x:x[0], reverse=True)
-#    l=[x[1] for x in l]
-#    s=[[f.split('.')[0],f] for f in l]
-#    s=sorted(s,key=lambda x:x[0], reverse=True)
-    return l
+    l=[x[1] for x in l]
+    s=[[f.split('.')[0],f] for f in l]
+    s=sorted(s,key=lambda x:x[0], reverse=True)
+    return s
 
 @route('/donate')
 def donate():
