@@ -37,7 +37,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                position: relative;
+                position: relative;            
             }
             #imageModal img {
                 max-width: 90vw;
@@ -70,19 +70,36 @@
                 opacity: 1;
                 background: rgba(0, 0, 0, 0.7);
             }
+            .section-title {
+                margin-bottom: 1rem;
+                border-left: 5px solid #198754; /* 主绿色 */
+                padding-left: 0.75rem;
+                color: #145c32; /* 深绿色标题 */
+            }
             #prevImage { left: 16px; }
             #nextImage { right: 16px; }
+            .my-masonry {
+                position: relative;
+            }
+            .masonry-item {
+                width: 25%;
+                padding: 0.75rem;
+            }
+            @media (max-width: 992px) {
+                .masonry-item { width: 33.3333%; }
+            }
+            @media (max-width: 768px) {
+                .masonry-item { width: 50%; }
+            }
         </style>
     </head>
     <body>
         % include('NAVBAR.tpl')
         <div class="container">
         % for event, pics in album:
-            <div class="row card mt-1">
-            
-                <h1>{{event.split('+')[0]}}</h1>
-                <div class="row my-masonry">
-
+            <div class="card mt-2">
+                <h1 class="section-title mt-3">{{event.split('+')[0]}}</h1>
+                <div class="my-masonry">
                     % for item in pics:
                         <div class="masonry-item mb-3 col-lg-3 col-md-4 col-sm-4 col-xs-6">
                             <img src="/static/thumb/{{event}}/{{item}}" 
@@ -116,11 +133,16 @@
         <script src="/static/js/imagesloaded.pkgd.min.js"></script>
         <script>
             var grids= document.querySelectorAll('.my-masonry');
-            //for (let i=0; i<grids.length; i++){
-            //    var grid=grids[i];
-            //var msnry = new Masonry(grid, { itemSelector: '.masonry-item', percentPosition: true });
-            //imagesLoaded(grid, function() { msnry.layout(); });
-            //}
+            grids.forEach(function (grid) {
+                imagesLoaded(grid, function () {
+                    new Masonry(grid, {
+                        itemSelector: '.masonry-item',
+                        percentPosition: true,
+                        columnWidth: '.masonry-item',
+                        horizontalOrder: true
+                    });
+                });
+            });
             var thumbnails = document.querySelectorAll('.thumb');
             var modalImage = document.getElementById('modalImage');
             var currentIndex = -1;

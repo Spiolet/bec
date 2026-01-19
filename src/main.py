@@ -100,9 +100,11 @@ def get_album():
             s=[item[1] for item in s]
             for item in s:
                 generate_thumbnail(path,item)
-            all.append((path.split('/')[-1], s))
+            all.append([path.split('/')[-1], s])
     print(all)
-    all=sorted(all,key=lambda x:int(x[0].split('+')[-1]), reverse=True)
+    all=sorted(all,key=lambda x:int(x[0].split('+')[-1]), reverse=True) 
+    for item in all:
+        item[1]=sorted(item[1], key=lambda x:int(x.split('.')[0]))
     return all
 
 @route('/api/events_past')
@@ -124,7 +126,7 @@ def get_recaps():
     l=sorted(l,key=lambda x:x[0], reverse=True)
     l=[x[1] for x in l]
     s=[[f.split('.')[0],f] for f in l]
-    s=sorted(s,key=lambda x:x[0], reverse=True)
+#    s=sorted(s,key=lambda x:x[0], reverse=True)
     return s
 
 @route('/donate')
