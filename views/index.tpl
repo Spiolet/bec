@@ -287,7 +287,15 @@
           <div class="card p-3 mb-3">
             <ul class="list-group-recaps" style="margin-top:0px; margin-bottom:0px">
               % for item in recaps:
-              <li class="list-group-item-recaps" style="padding:7px"><a href="/crc/{{item[0]}}">{{item[0].split('+')[1]}}</a></li>
+              <li class="list-group-item-recaps" style="padding:7px">
+                <a href="/crc/{{item[0]}}">
+                    <span style="flex: 1 1 auto">{{item[0].split('+')[1]}}</span>
+                    <span style="flex: 0 0 auto; margin-right: 10px; font-size: smaller; font-weight: lighter;">
+                        <i class="bi bi-person-fill"></i> {{item[0].split('+')[3]}}
+                        <i class="bi bi-calendar-plus"></i> {{item[0].split('+')[2]}}
+                    </span>
+                </a>
+              </li>
               %end
             </ul>
           </div>
