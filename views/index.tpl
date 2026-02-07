@@ -125,7 +125,7 @@
                 <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic2">
               </div>
               <div class="carousel-item">
-                <img src="/static/pics/serrasota.png" class="d-block w-100" alt="pic3">
+                <img src="/static/pics/sk.png" class="d-block w-100" alt="pic3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" style="width:5%" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
