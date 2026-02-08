@@ -5,6 +5,8 @@
     <link href="/static/css/bootstrap-icons.min.css" rel="stylesheet">
     <link href="/static/css/bgi.css" rel="stylesheet">
     <link href="/static/css/listgroup.css" rel="stylesheet">
+    <link href="https://unpkg.com/video.js@8.23.7/dist/video-js.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js@8.23.7/dist/video.min.js"></script>
     <style>
       .container {
         background-color: #f8f9fa;
@@ -148,7 +150,7 @@
           <h1 class="section-title mt-6">Impact at a Glance</h1>
           <div class="row" style="font-size:15px;text-align:center">
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">30+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">40+</h2>
               <p>Members</p>
             </div>
             <div class="col-6 col-md-3 p-0">
@@ -160,7 +162,7 @@
               <p>Events Organized</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">150+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">2000+</h2>
               <p>Volunteer Hours</p>
             </div>
           </div>
@@ -277,6 +279,7 @@
           <a href="/events" class="btn btn-sm btn-outline-success float-end">
             More <i class="bi bi-arrow-right"></i>
           </a>
+          <!put the video stuff here>
         </div>
       </div>
 
