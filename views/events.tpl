@@ -108,16 +108,16 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                            <img src="/static/event_pics/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/event_pics/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/event_pics/3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
                             <img src="/static/event_pics/4.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/event_pics/5.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/event_pics/6.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/event_pics/7.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -135,9 +135,18 @@
 </main>
     <script src="/static/js/bootstrap.bundle.js"></script>
     <script>
+        const carouselDom = document.querySelector('#carouselExample')
+        const carousel = new bootstrap.Carousel(carouselDom, {});
+        const setActive=(i)=>{carousel.to(i);}
         const pastmoreset = new Set();
-        const pastmore = (i)=>{ pastmoreset.add(i); loadpast(); }
-        const pastless = (i)=>{ pastmoreset.delete(i); loadpast(); }
+        const pastmore = (i, p)=>{ 
+            if (p!==undefined){
+                setActive(p);
+            }
+            pastmoreset.add(i); 
+            loadpast(); 
+        }
+        const pastless = (i, p)=>{ pastmoreset.delete(i); loadpast(); }
 
         const loadpast = ()=>{
             fetch("/api/events_past")
@@ -152,8 +161,8 @@
                             <small class="w-auto text-nowrap">${item.time}</small>
                         </div>
                         ${pastmoreset.has(i) ? 
-                            `<p class="mb-1">${item.detail} <a href="#" onclick="pastless(${i})">show less</a></p>` :
-                            `<p class="mb-1">${item.short} <a href="#" onclick="pastmore(${i})">show more</a></p>`}
+                            `<p class="mb-1">${item.detail} <a href="#" onclick="pastless(${i},${item.page})">show less</a></p>` :
+                            `<p class="mb-1">${item.short} <a href="#" onclick="pastmore(${i},${item.page})">show more</a></p>`}
                     </div>`;
                 });
             }).catch(err=>console.error(err));
@@ -161,8 +170,14 @@
         loadpast();
 
         const fmoreset = new Set();
-        const fmore = (i)=>{ fmoreset.add(i); loadf(); }
-        const fless = (i)=>{ fmoreset.delete(i); loadf(); }
+        const fmore = (i, p)=>{
+            if (p!==undefined){
+                setActive(p);
+            }
+            fmoreset.add(i); 
+            loadf(); 
+        }
+        const fless = (i, p)=>{fmoreset.delete(i); loadf(); }
 
         const loadf = ()=>{
             fetch("/api/events_future")
@@ -176,7 +191,9 @@
                             <h5 class="mb-1">${item.link?`<a href="${item.link}">${item.title}</a>`:`${item.title}`}</h5>
                             <small class="w-auto text-nowrap">${item.time}</small>
                         </div>
-                        <p class="mb-1">${item.detail}</p> 
+                        ${fmoreset.has(i) ? 
+                            `<p class="mb-1">${item.detail} <a href="#" onclick="fless(${i},${item.page})">show less</a></p>` :
+                            `<p class="mb-1">${item.short} <a href="#" onclick="fmore(${i},${item.page})">show more</a></p>`}
                     </div>`;
                 });
             }).catch(err=>console.error(err));
