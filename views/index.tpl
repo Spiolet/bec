@@ -162,7 +162,7 @@
               <p>Events Organized</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">200+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">300+</h2>
               <p>Volunteer Hours</p>
             </div>
           </div>
