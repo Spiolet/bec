@@ -121,7 +121,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item">
-                <img src="/static/pics/camp poster.png" class="d-block w-100" alt="pic1">
+                <img src="/static/pics/ncp.png" class="d-block w-100" alt="pic1">
               </div>
               <div class="carousel-item active">
                 <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic2">
