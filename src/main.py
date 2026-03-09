@@ -2,7 +2,7 @@ from bottle import route, run, template, static_file, request
 import os
 import markdown
 import json
-from PIL import Image
+from PIL import Image 
 from sys import argv
 NAVBAR =(
     {'url':'/','name': 'Homepage'},
