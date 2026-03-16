@@ -244,8 +244,8 @@
           <h1 class="section-title">Events</h1>
           <div class="card p-3 mb-3">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#future-tab-pane">Future</button></li>
-              <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#past-tab-pane">Past</button></li>
+              <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#future-tab-pane">Future</button></li>
+              <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#past-tab-pane">Past</button></li>
             </ul>
             <div class="tab-content mt-3">
               <div class="tab-pane fade show active" id="future-tab-pane">

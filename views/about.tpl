@@ -40,9 +40,7 @@
               </a>
             </div>
         </div>
-      </div>
-    </div>
-
+      
 
     % include('FOOTER.tpl')
     <script src="/static/js/bootstrap.bundle.js"></script>
