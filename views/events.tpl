@@ -107,7 +107,7 @@
             <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item ">
                             <img src="/static/event_pics/1.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
@@ -116,7 +116,7 @@
                         <div class="carousel-item">
                             <img src="/static/event_pics/3.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <img src="/static/event_pics/4.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
