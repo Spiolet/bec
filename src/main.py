@@ -28,7 +28,8 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    
+    {'title':'Spring Adaptive Golf goes outdoors! ⛳️', 'page':4, 'time': 'Apr-Jun 2026', 'detail': 'After a successful winter program, Boston Eaglets Club and AllStars Learning continue supporting kids with special needs through inclusive golf sessions focused on putting, chipping, and basic swing skills in a fun and encouraging environment. Junior coaches and volunteers are warmly welcome — helping every child enjoy the game and grow with confidence.'},
+    {'title':'2026 Spring Golf Gathering!', 'time':'Apr-12-2026', 'page':5, 'detail':"After a long Boston winter, we're beyond excited to kick off our first outdoor golf gathering of the season! Come out to Blue Hill Country Club for a fun-filled 9-hole event where young golfers can reconnect, compete, grow, and celebrate the game together."},
     {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': 'Oct-25-2026', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
