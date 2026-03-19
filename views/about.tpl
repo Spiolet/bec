@@ -5,6 +5,14 @@
     <link href="/static/css/bgi.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+          .founder-img {
+        width: 100%;
+        border-radius: 50%;
+        border: 3px solid #e9ecef;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+    </style>
   </head>
   <body>
     % include('NAVBAR.tpl')
@@ -40,7 +48,92 @@
               </a>
             </div>
         </div>
-      
+        
+      </div>
+<div class="card shadow-sm border-success mb-4">
+  <div class="card-body">
+      <div class="row g-4">
+        <div class="col-12" style="padding-right:25px">
+          <h3 class="text-success">Meet The Team</h3>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Brian Li</h2>
+                    <h3>Class of 2027</h3>
+                    <h4 class="mb-0">President, Founder</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/SWBH.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Spencer Haohang Wu</h2>
+                    <h3>Class of 2030</h3>
+                    <h4 class="mb-0">Website Administrator, Co-Founder</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/twbh.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Taylor Pan</h2>
+                    <h3>Class of 2027</h3>
+                    <h4 class="mb-0">High School Ambassador</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/vwbh.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Valerie Luxieo</h2>
+                    <h3>Class of 2028</h3>
+                    <h4 class="mb-0">High School Ambassador</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/JWBH.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Jayden Junhang Wu</h2>
+                    <h3>Class of 2032</3>
+                    <h4 class="mb-0">Middle School Ambassador</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card p-3 mb-3 border-success">
+                <div class="row g-3 align-items-center">
+                  <div class="col-3"><img src="/static/pics/bcwbh.png" class="founder-img"></div>
+                  <div class="col-8 text-center">
+                    <h2>Bryant Cai</h2>
+                    <h3>Class of 2028</h3>
+                    <h4 class="mb-0">High School Ambassador</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     % include('FOOTER.tpl')
     <script src="/static/js/bootstrap.bundle.js"></script>
