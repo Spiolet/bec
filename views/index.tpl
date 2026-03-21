@@ -154,7 +154,7 @@
               <p>Members</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">$5000+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">$6000+</h2>
               <p>Raised for Charity</p>
             </div>
             <div class="col-6 col-md-3 p-0">
