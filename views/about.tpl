@@ -27,7 +27,7 @@
       <div class="card shadow-sm border-success mb-4">
         <div class="card-body">
           <h3 class="text-success">Introduction</h3>
-          <p>A welcoming community since 2023 for junior golfers across Greater Boston—open to all skill levels. We play, learn, and support one another on and off the course.</p>
+          <p>A welcoming community since 2023 for junior golfers across the Greater Boston area, open to all skill levels. We play, learn, and support one another on and off the course.</p>
         </div>
       </div>
 
