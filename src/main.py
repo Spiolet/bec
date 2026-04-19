@@ -14,6 +14,7 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
+    {'title':'2026 Spring Golf Gathering!', 'time':'Apr-12-2026', 'page':5, 'detail':"After a long Boston winter, we're beyond excited to kick off our first outdoor golf gathering of the season! Come out to Blue Hill Country Club for a fun-filled 9-hole event where young golfers can reconnect, compete, grow, and celebrate the game together."},
     {'title':'BEC Spring Kickoff', 'page':3, 'time':'Mar-8-2026', 'detail':'Join fellow Boston Eaglets Club members for our Spring Kickoff Social Event at Topgolf Canton. Reconnect, enjoy some golf, and discuss the upcoming 2026 spring.'},
     {'title':'Winter Adaptive Golf Program for Special Needs', 'page':2, 'time':'Jan to Mar 2026', "detail":"The Boston Eaglets Club, together with AllStars Learning, is introducing an Adaptive Golf Program for Special Needs from January to March 2026. This is a new and valuable initiative for our team, and the six-session series will include putting, chipping, and basic swing skills taught through supportive, developmentally friendly activities. Although all junior volunteers will receive training, we recognize that this opportunity brings its own challenges, and we are committed to doing our best as we learn to support young participants through adaptive golf. Our hope is to create a space where kids with autism can play comfortably, build confidence, and grow step by step. We welcome all club members to join us in this program."},
     {'title':'🌴🌴🌴Boston Eaglets Club Winter Golf Escape🌴🌴🌴', 'page':1, 'time':'Jan-2-2026', 'detail':"TPC Sarasota's Private Golf and Social Club - Prestancia, tee off at 9:30 AM. Play, relax, connect. Join us for a sunny winter getaway to Florida with friends and fellow members of the Boston Eaglets Club. We are hosting 18 holes at a world-class private course, light lunch available at the clubhouse, great company, warm sunshine, and friendly competition. There are only 8 spots available! It will be first come, first served, so don't miss out! For any questions regarding this event, please contact Spencer Wu at spiolet3456@gmail.com Keep your swing strong. Build your connections. Enjoy the sunshine! 🌴Together we grow — on and off the course 🦅"},
@@ -29,7 +30,6 @@ for item in EVENTS_PAST:
 
 EVENTS_FUTURE =(
     {'title':'Spring Adaptive Golf goes outdoors! ⛳️', 'page':4, 'time': 'Apr-Jun 2026', 'detail': 'After a successful winter program, Boston Eaglets Club and AllStars Learning continue supporting kids with special needs through inclusive golf sessions focused on putting, chipping, and basic swing skills in a fun and encouraging environment. Junior coaches and volunteers are warmly welcome — helping every child enjoy the game and grow with confidence.'},
-    {'title':'2026 Spring Golf Gathering!', 'time':'Apr-12-2026', 'page':5, 'detail':"After a long Boston winter, we're beyond excited to kick off our first outdoor golf gathering of the season! Come out to Blue Hill Country Club for a fun-filled 9-hole event where young golfers can reconnect, compete, grow, and celebrate the game together."},
     {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': 'Oct-25-2026', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
@@ -40,7 +40,7 @@ for item in EVENTS_FUTURE:
 
 @route('/')
 def homepage():
-    return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album()[0:10], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
+    return template('index', NAVBAR=NAVBAR, recaps=get_recaps()[0:5], album=get_album('as')[0:2]+get_album('bge')[0:2]+get_album('fe')[0:2]+get_album('vlc')[0:2], EVENTS_PAST=EVENTS_PAST, EVENTS_FUTURE=EVENTS_FUTURE)
 
 @route('/static/<filepath:path>')
 def static_files(filepath):
@@ -92,9 +92,9 @@ def generate_thumbnail(path, filename):
     return thumb_path
 
 
-def get_album():
+def get_album(suffix):
     all=[]
-    for path, subpath, files in os.walk("./static/album/"):
+    for path, subpath, files in os.walk("./static/a-"+suffix):
         if subpath==[]:
             l=filter(lambda x:x!='.DS_Store', files)
             s=[[int(f.split('.')[0]),f] for f in l]
@@ -119,7 +119,11 @@ def api_events_past():
 
 @route('/gallery')
 def gallery():
-    return template('gallery', NAVBAR=NAVBAR, album=get_album())
+    return template('galleryv2', NAVBAR=NAVBAR)
+
+@route('/gallery/<suf>')
+def gsub(suf):
+    return template('gallery', NAVBAR=NAVBAR, album=get_album(suf))
 
 def get_recaps():
     l=list(os.walk("./recaps"))[0][2]
