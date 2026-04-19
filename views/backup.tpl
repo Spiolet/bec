@@ -13,7 +13,6 @@
             transition: transform 0.2s, box-shadow 0.2s;
             background: #ffffff;
             height: 100%;
-            position: relative; /* needed for stretched link */
         }
 
         .card:hover {
@@ -21,36 +20,37 @@
             box-shadow: 0 8px 18px rgba(0,0,0,0.08);
         }
 
-        /* 👇 stacked header */
+        /* 👇 header layout */
         .card-header-custom {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
         /* 👇 bigger title */
         .section-title {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             border-left: 5px solid #198754;
             padding-left: 0.75rem;
             color: #198754;
             text-decoration: underline;
             display: inline-block;
-            font-size: 2.2rem;
-            font-weight: 700;
+            font-size: 1.9rem;
+            font-weight: 600;
         }
 
         .section-title:hover {
             color: #145c32;
         }
 
-        /* 👇 keeps heights aligned */
+        /* 👇 keeps titles aligned */
         .card h1 {
             min-height: 100px;
+            font-size: 1.6rem;
         }
 
-        /* 👇 button under title */
+        /* 👇 "More" button (outline → fill on hover) */
         .more-btn {
-            display: inline-block;
-            margin-top: 6px;
             font-size: 0.9rem;
             color: #198754;
             text-decoration: none;
@@ -59,16 +59,17 @@
             border-radius: 999px;
             background: transparent;
             transition: all 0.25s ease;
-            position: relative;
-            z-index: 2; /* keep button clickable above stretched link */
+            white-space: nowrap;
         }
 
         .more-btn:hover {
             background: #198754;
             color: white;
+            border-color: #198754;
+            transform: translateY(-1px);
         }
 
-        /* 👇 image */
+        /* 👇 responsive image box */
         .image-box {
             width: 100%;
             aspect-ratio: 4 / 3;
@@ -81,13 +82,6 @@
             height: 100%;
             object-fit: cover;
             display: block;
-        }
-
-        /* 👇 stretched link */
-        .stretched-link {
-            position: absolute;
-            inset: 0;
-            z-index: 1;
         }
     </style>
 </head>
@@ -102,15 +96,12 @@
         <!-- Card 1 -->
         <div class="mt-2 col-md-6 col-xs-12 gx-2">
             <div class="card">
-                <a href="/gallery/bge" class="stretched-link"></a>
-
-                <div class="mt-3 px-3 card-header-custom pt-5">
+                <div class="mt-3 px-3 card-header-custom">
                     <h1 class="mb-0">
-                        <span class="section-title">BEC Golf Events</span>
+                        <a class="section-title" href="/gallery/bge">BEC Golf Events</a>
                     </h1>
                     <a href="/gallery/bge" class="more-btn">More →</a>
                 </div>
-
                 <div class="px-3 pb-3">
                     <div class="image-box">
                         <img src="/static/thumb/Oct 25 2025 BEC Fall Outing at Brae Burn CC+5/1.jpg" alt="">
@@ -122,15 +113,12 @@
         <!-- Card 2 -->
         <div class="mt-2 col-md-6 col-xs-12 gx-2">
             <div class="card">
-                <a href="/gallery/as" class="stretched-link"></a>
-
-                <div class="mt-3 px-3 card-header-custom pt-5">
+                <div class="mt-3 px-3 card-header-custom">
                     <h1 class="mb-0">
-                        <span class="section-title">Adaptive Golf for Special Needs</span>
+                        <a class="section-title" href="/gallery/as">Adaptive Golf for Special Needs</a>
                     </h1>
                     <a href="/gallery/as" class="more-btn">More →</a>
                 </div>
-
                 <div class="px-3 pb-3">
                     <div class="image-box">
                         <img src="/static/thumb/Apr 5 2026 Spring Adaptive Sports Kickoff+11/1.jpg" alt="">
@@ -142,15 +130,12 @@
         <!-- Card 3 -->
         <div class="mt-2 col-md-6 col-xs-12 gx-2">
             <div class="card">
-                <a href="/gallery/fe" class="stretched-link"></a>
-
-                <div class="mt-3 px-3 card-header-custom pt-5">
+                <div class="mt-3 px-3 card-header-custom">
                     <h1 class="mb-0">
-                        <span class="section-title">Fundraising Events</span>
+                        <a class="section-title" href="/gallery/fe">Fundraising Events</a>
                     </h1>
                     <a href="/gallery/fe" class="more-btn">More →</a>
                 </div>
-
                 <div class="px-3 pb-3">
                     <div class="image-box">
                         <img src="/static/thumb/Oct 26 2024 Fundraising at US Kids 2024 Fall Season Championship+3/1.jpg" alt="">
@@ -162,15 +147,12 @@
         <!-- Card 4 -->
         <div class="mt-2 col-md-6 col-xs-12 gx-2">
             <div class="card">
-                <a href="/gallery/vlc" class="stretched-link"></a>
-
-                <div class="mt-3 px-3 card-header-custom pt-5">
+                <div class="mt-3 px-3 card-header-custom">
                     <h1 class="mb-0">
-                        <span class="section-title">Volunteering at Local Communities</span>
+                        <a class="section-title" href="/gallery/vlc">Volunteering at Local Communities</a>
                     </h1>
                     <a href="/gallery/vlc" class="more-btn">More →</a>
                 </div>
-
                 <div class="px-3 pb-3">
                     <div class="image-box">
                         <img src="/static/thumb/Volunteering at Local Events+2/3.jpg" alt="">
