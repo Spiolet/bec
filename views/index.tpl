@@ -198,7 +198,7 @@
             More ==>
             </a>
             <li>
-              <a href="/gallery/as" class="link">Running an Adaptive Golf coaching program for children with special needs</a>
+              <a href="/gallery/as" class="link">Adaptive golf program for children with special needs</a>
             </li>
             <a href="/gallery/as" class="btn btn-sm btn-outline-success" style="font-size:15px" target="_blank">
             More ==>
