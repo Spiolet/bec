@@ -185,10 +185,30 @@
           </p>
 
           <ul class="about-list">
-            <li>Organizing social golf events for junior golfers</li>
-            <li>Volunteering within the local communities</li>
-            <li>Running an Adaptive Golf coaching program for children with special needs</li>
-            <li>Fundraising for charitable causes</li>
+            <li>
+              <a href="/gallery/bge" class="link">Organizing social golf events for junior golfers</a>
+            </li>
+            <a href="/gallery/bge" class="btn btn-sm btn-outline-success" style="font-size:15px" target="_blank">
+            More ==>
+            </a>
+            <li>
+              <a href="/gallery/vlc" class="link">Volunteering within the local communities</a>
+            </li>
+            <a href="/gallery/vlc" class="btn btn-sm btn-outline-success" style="font-size:15px" target="_blank">
+            More ==>
+            </a>
+            <li>
+              <a href="/gallery/as" class="link">Running an Adaptive Golf coaching program for children with special needs</a>
+            </li>
+            <a href="/gallery/as" class="btn btn-sm btn-outline-success" style="font-size:15px" target="_blank">
+            More ==>
+            </a>
+            <li>
+              <a href="/gallery/fe" class="link">Fundraising for charitable causes</a>
+            </li>
+            <a href="/gallery/fe" class="btn btn-sm btn-outline-success" style="font-size:15px" target="_blank">
+            More ==>
+            </a>
           </ul>
 
           <a href="https://forms.gle/5e8Y8yTgawhZ4iGE8" class="btn btn-sm btn-outline-success" style="font-size:30px" target="_blank">
