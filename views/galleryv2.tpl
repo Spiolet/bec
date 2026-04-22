@@ -133,7 +133,7 @@
 
                 <div class="px-3 pb-3">
                     <div class="image-box">
-                        <img src="/static/thumb/Apr 5 2026 Spring Adaptive Sports Kickoff+11/1.jpg" alt="">
+                        <img src="/static/thumb/Apr 5 2026 Spring Adaptive Golf Kickoff+11/1.jpg" alt="">
                     </div>
                 </div>
             </div>
