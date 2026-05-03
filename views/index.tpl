@@ -282,7 +282,7 @@
               <div class="col-3"><img src="/static/pics/vwbh.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Valerie Luxieo</h2>
-                <h3>Class of 2028</h3>
+                <h3>Class of 2029</h3>
                 <h4 class="mb-0">High School Ambassador</h4>
               </div>
             </div>
@@ -303,7 +303,7 @@
               <div class="col-3"><img src="/static/pics/jj.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Spencer Jayden Jiang</h2>
-                <h3>Class of 2032</h3>
+                <h3>Class of 2031</h3>
                 <h4 class="mb-0">Middle School Ambassador</h4>
               </div>
             </div>
