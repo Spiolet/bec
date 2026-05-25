@@ -59,7 +59,7 @@
             <div class="col-12 col-md-6">
               <div class="card p-3 mb-3 border-success">
                 <div class="row g-3 align-items-center">
-                  <div class="col-3"><img src="/static/pics/BWBH.png" class="founder-img"></div>
+                  <div class="col-3"><img src="/static/pics/BWBH.jpg" class="founder-img"></div>
                   <div class="col-8 text-center">
                     <h2>Brian Li</h2>
                     <h3>Class of 2027</h3>
