@@ -71,15 +71,13 @@
         /* 👇 image */
         .image-box {
             width: 100%;
-            aspect-ratio: 4 / 3;
             overflow: hidden;
             border-radius: 0.75rem;
         }
 
         .image-box img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             display: block;
         }
 
@@ -113,7 +111,7 @@
 
                 <div class="px-3 pb-3">
                     <div class="image-box">
-                        <img src="/static/thumb/Oct 25 2025 BEC Fall Outing at Brae Burn CC+5/1.jpg" alt="">
+                        <img src="/static/a-bge/Oct 25 2025 BEC Fall Outing at Brae Burn CC+5/1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -133,7 +131,7 @@
 
                 <div class="px-3 pb-3">
                     <div class="image-box">
-                        <img src="/static/thumb/Apr 5 2026 Spring Adaptive Golf Kickoff+11/1.jpg" alt="">
+                        <img src="/static/a-as/Apr 5th, 2026 Spring Adaptive Golf Kickoff+11/1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -153,7 +151,7 @@
 
                 <div class="px-3 pb-3">
                     <div class="image-box">
-                        <img src="/static/thumb/Oct 26 2024 Fundraising at US Kids 2024 Fall Season Championship+3/1.jpg" alt="">
+                        <img src="/static/a-fe/Oct 26 2024 Fundraising at US Kids 2024 Fall Season Championship+3/1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -173,7 +171,7 @@
 
                 <div class="px-3 pb-3">
                     <div class="image-box">
-                        <img src="/static/thumb/Volunteering at Local Events+2/3.jpg" alt="">
+                        <img src="/static/a-vlc/Volunteering at USKids Local Events 2024-25+2/3.png">
                     </div>
                 </div>
             </div>
