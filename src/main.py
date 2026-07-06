@@ -65,7 +65,6 @@ def generate_thumbnail(path, filename):
     thumb_path = os.path.join(thumb_dir, filename)
 
     with Image.open(path+'/'+filename) as img:
-        # Fix EXIF orientation
         try:
             exif = img._getexif()
             if exif:
@@ -79,11 +78,9 @@ def generate_thumbnail(path, filename):
         except Exception:
             pass
 
-        # Resize
         new_height = int(img.height * 400 / img.width)
         img.thumbnail((400, new_height))
 
-        # 🔥 THIS IS THE IMPORTANT PART
         if img.mode in ("RGBA", "LA"):
             img = img.convert("RGB")
 
@@ -154,6 +151,32 @@ def crc (name):
         with open('recaps/'+name+'.ht', 'r', encoding='utf-8') as f:
             html = f.read()
             return template('specificarticle', NAVBAR=NAVBAR, html=html, title=name) 
+def optimize_static_images():
+    for root, dirs, files in os.walk("./static"):
+
+        if "/thumb" in root:
+            continue
+
+        for file in files:
+            if not file.lower().endswith((".jpg", ".jpeg", ".png")):
+                continue
+
+            path = os.path.join(root, file)
+
+            try:
+                with Image.open(path) as img:
+
+                    img.thumbnail((1800, 1800))
+
+                    if img.mode in ("RGBA", "LA"):
+                        img = img.convert("RGB")
+
+                    img.save(path, quality=80, optimize=True)
+
+                print("Optimized:", path)
+
+            except Exception as e:
+                print("Skipped:", path, e)
 if __name__ == '__main__':
     print(argv)
     if len(argv)>1 and argv[1]=='pro':
