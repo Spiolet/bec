@@ -157,7 +157,7 @@
                 <img src="/static/pics/ncp.jpg" class="d-block w-100" alt="pic1">
               </div>
               <div class="carousel-item active">
-                <img src="/static/pics/jkg.png" class="d-block w-100" alt="pic2">
+                <img src="/static/pics/fall_event.jpg" class="d-block w-100" alt="pic2">
               </div>
               <div class="carousel-item">
                 <img src="/static/pics/gg.png" class="d-block w-100" alt="pic3">
@@ -224,7 +224,7 @@
               <p>Members</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">$6000+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">$7200+</h2>
               <p>Raised for Charity</p>
             </div>
             <div class="col-6 col-md-3 p-0">
@@ -232,7 +232,7 @@
               <p>Events Organized</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">300+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">320+</h2>
               <p>Volunteer Hours</p>
             </div>
           </div>

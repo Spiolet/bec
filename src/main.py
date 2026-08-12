@@ -14,6 +14,7 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
+    {'title':'Spring Adaptive Golf goes outdoors! ⛳️', 'page':4, 'time': 'Apr-Jun 2026', 'detail': 'After a successful winter program, Boston Eaglets Club and AllStars Learning continue supporting kids with special needs through inclusive golf sessions focused on putting, chipping, and basic swing skills in a fun and encouraging environment. Junior coaches and volunteers are warmly welcome — helping every child enjoy the game and grow with confidence.'},
     {'title':'2026 Spring Golf Gathering!', 'time':'Apr-12-2026', 'page':5, 'detail':"After a long Boston winter, we're beyond excited to kick off our first outdoor golf gathering of the season! Come out to Blue Hill Country Club for a fun-filled 9-hole event where young golfers can reconnect, compete, grow, and celebrate the game together."},
     {'title':'BEC Spring Kickoff', 'page':3, 'time':'Mar-8-2026', 'detail':'Join fellow Boston Eaglets Club members for our Spring Kickoff Social Event at Topgolf Canton. Reconnect, enjoy some golf, and discuss the upcoming 2026 spring.'},
     {'title':'Winter Adaptive Golf Program for Special Needs', 'page':2, 'time':'Jan to Mar 2026', "detail":"The Boston Eaglets Club, together with AllStars Learning, is introducing an Adaptive Golf Program for Special Needs from January to March 2026. This is a new and valuable initiative for our team, and the six-session series will include putting, chipping, and basic swing skills taught through supportive, developmentally friendly activities. Although all junior volunteers will receive training, we recognize that this opportunity brings its own challenges, and we are committed to doing our best as we learn to support young participants through adaptive golf. Our hope is to create a space where kids with autism can play comfortably, build confidence, and grow step by step. We welcome all club members to join us in this program."},
@@ -29,7 +30,7 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    {'title':'Spring Adaptive Golf goes outdoors! ⛳️', 'page':4, 'time': 'Apr-Jun 2026', 'detail': 'After a successful winter program, Boston Eaglets Club and AllStars Learning continue supporting kids with special needs through inclusive golf sessions focused on putting, chipping, and basic swing skills in a fun and encouraging environment. Junior coaches and volunteers are warmly welcome — helping every child enjoy the game and grow with confidence.'},
+    {'title':'Fall Adaptive Golf Outdoor Program! ⛳️', 'page':7, 'time': 'Aug-Sep 2026', 'detail': 'Fall Outdoor Program.'},
     {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': 'Oct-25-2026', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
