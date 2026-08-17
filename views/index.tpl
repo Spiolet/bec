@@ -152,10 +152,10 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
             </div>
 
-            <div class="carousel-inner">
-              <div class="carousel-item">
+             <div class="carousel-inner">
+              <!--<div class="carousel-item">
                 <img src="/static/pics/ncp.jpg" class="d-block w-100" alt="pic1">
-              </div>
+              </div>-->
               <div class="carousel-item active">
                 <img src="/static/pics/fall_event.jpg" class="d-block w-100" alt="pic2">
               </div>
