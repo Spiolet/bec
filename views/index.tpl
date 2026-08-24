@@ -279,6 +279,17 @@
 
           <div class="card p-3 mb-3">
             <div class="row g-3 align-items-center">
+              <div class="col-3"><img src="/static/pics/aw.jpg" class="founder-img"></div>
+              <div class="col-8 text-center">
+                <h2>Alicia Wen</h2>
+                <h3>Class of 2027</h3>
+                <h4 class="mb-0">High School Ambassador</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-3 mb-3">
+            <div class="row g-3 align-items-center">
               <div class="col-3"><img src="/static/pics/vwbh.png" class="founder-img"></div>
               <div class="col-8 text-center">
                 <h2>Valerie Luxieo</h2>

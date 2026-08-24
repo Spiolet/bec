@@ -30,7 +30,7 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    {'title':'Fall Adaptive Golf Outdoor Program! ⛳️', 'page':7, 'time': 'Aug-Sep 2026', 'detail': 'Fall Outdoor Program.'},
+    {'title':'Fall Adaptive Golf Outdoor Program! ⛳️', 'page':7, 'time': 'Aug-Sep 2026', 'detail': 'Fall Outdoor Program.f'},
     {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': 'Oct-25-2026', 'detail': 'Future event at Falmouth Country Club.'},
 )
 
