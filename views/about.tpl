@@ -128,6 +128,26 @@
                 </div>
               </div>
             </div>
+          <div class="card p-3 mb-3">
+            <div class="row g-3 align-items-center">
+              <div class="col-3"><img src="/static/pics/cy.jpg" class="founder-img"></div>
+              <div class="col-8 text-center">
+                <h2>Chloe You</h2>
+                <h3>Class of 2031</h3>
+                <h4 class="mb-0">Middle School Ambassador</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card p-3 mb-3">
+            <div class="row g-3 align-items-center">
+              <div class="col-3"><img src="/static/pics/jj.png" class="founder-img"></div>
+              <div class="col-8 text-center">
+                <h2>Jayden Jiang</h2>
+                <h3>Class of 2031</h3>
+                <h4 class="mb-0">Middle School Ambassador</h4>
+              </div>
+            </div>
+          </div>
             <div class="col-12 col-md-6">
               <div class="card p-3 mb-3 border-success">
                 <div class="row g-3 align-items-center">
