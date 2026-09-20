@@ -139,6 +139,7 @@
               </div>
             </div>
           </div>
+            </div>
             <div class="col-12 col-md-6">
               <div class="card p-3 mb-3 border-success">
                 <div class="row g-3 align-items-center">
@@ -150,6 +151,7 @@
               </div>
             </div>
           </div>
+            </div>
             <div class="col-12 col-md-6">
               <div class="card p-3 mb-3 border-success">
                 <div class="row g-3 align-items-center">
