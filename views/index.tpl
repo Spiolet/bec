@@ -157,7 +157,7 @@
                 <img src="/static/pics/ncp.jpg" class="d-block w-100" alt="pic1">
               </div>-->
               <div class="carousel-item active">
-                <img src="/static/pics/fall_event.jpg" class="d-block w-100" alt="pic2">
+                <img src="/static/pics/11.jpg" class="d-block w-100" alt="pic2">
               </div>
               <div class="carousel-item">
                 <img src="/static/pics/gg.png" class="d-block w-100" alt="pic3">

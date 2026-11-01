@@ -14,6 +14,8 @@ NAVBAR =(
 )
 
 EVENTS_PAST =(
+    {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'page':8, 'time': 'Oct-24-2026', 'detail': 'The Eaglets had a great day at Falmouth Country Club, we had some great swings, great laughs, and great spooks during the halloween season! We are more than happy to share that we raised over $1,000 for the U.S. Kids Foundation to help support future tournaments. Huge thanks to all the members who helped out and made the event possible. The Eaglets are more than excited to see you all next season!'},
+    {'title':'Fall Adaptive Golf Outdoor Program! ⛳️', 'page':7, 'time': 'Aug-Sep 2026', 'detail': 'Fall Outdoor Program.'},
     {'title':'Spring Adaptive Golf goes outdoors! ⛳️', 'page':4, 'time': 'Apr-Jun 2026', 'detail': 'After a successful winter program, Boston Eaglets Club and AllStars Learning continue supporting kids with special needs through inclusive golf sessions focused on putting, chipping, and basic swing skills in a fun and encouraging environment. Junior coaches and volunteers are warmly welcome — helping every child enjoy the game and grow with confidence.'},
     {'title':'2026 Spring Golf Gathering!', 'time':'Apr-12-2026', 'page':5, 'detail':"After a long Boston winter, we're beyond excited to kick off our first outdoor golf gathering of the season! Come out to Blue Hill Country Club for a fun-filled 9-hole event where young golfers can reconnect, compete, grow, and celebrate the game together."},
     {'title':'BEC Spring Kickoff', 'page':3, 'time':'Mar-8-2026', 'detail':'Join fellow Boston Eaglets Club members for our Spring Kickoff Social Event at Topgolf Canton. Reconnect, enjoy some golf, and discuss the upcoming 2026 spring.'},
@@ -30,8 +32,7 @@ for item in EVENTS_PAST:
     item['short'] = item['short'][0]+ "."+item['short'][1]+'.'
 
 EVENTS_FUTURE =(
-    {'title':'Fall Adaptive Golf Outdoor Program! ⛳️', 'page':7, 'time': 'Aug-Sep 2026', 'detail': 'Fall Outdoor Program.f'},
-    {'title':'Fundraising at Us Kids 2026 Fall Season Championship', 'time': 'Oct-25-2026', 'detail': 'Future event at Falmouth Country Club.'},
+    {'title':'Fall and Winter Adaptive Golf Outdoor Program! ⛳️', 'page':9, 'time': 'Nov 2026 - Jan 2027', 'detail': 'Fall and Winter Program.'},
 )
 
 for item in EVENTS_FUTURE: 
