@@ -224,7 +224,7 @@
               <p>Members</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">$7200+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">$8600+</h2>
               <p>Raised for Charity</p>
             </div>
             <div class="col-6 col-md-3 p-0">
@@ -232,7 +232,7 @@
               <p>Events Organized</p>
             </div>
             <div class="col-6 col-md-3 p-0">
-              <h2 style="font-size:30px; font-weight:bold;">320+</h2>
+              <h2 style="font-size:30px; font-weight:bold;">340+</h2>
               <p>Volunteer Hours</p>
             </div>
           </div>
